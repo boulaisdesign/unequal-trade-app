@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//Users/unequalone/.hermes/**)",
+      "Read(//Users/unequalone/.hermes/memories/**)",
+      "Bash(npm install *)",
+      "Bash(OANDA_API_KEY=test OANDA_ACCOUNT_ID=test node /Users/unequalone/Downloads/unequal-trade-app/web/server.js)",
+      "Bash(curl -s http://localhost:3000/)",
+      "Bash(kill %1)",
+      "Bash(~/.local/bin/hermes --help)",
+      "Bash(~/.local/bin/hermes webhook *)",
+      "Bash(~/ .local/bin/hermes gateway --help)",
+      "Bash(~/.local/bin/hermes gateway *)",
+      "Bash(~/ .local/bin/hermes gateway status)"
+    ]
+  }
+}
