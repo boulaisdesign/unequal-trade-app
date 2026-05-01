@@ -11,7 +11,8 @@
       "Bash(~/.local/bin/hermes webhook *)",
       "Bash(~/ .local/bin/hermes gateway --help)",
       "Bash(~/.local/bin/hermes gateway *)",
-      "Bash(~/ .local/bin/hermes gateway status)"
+      "Bash(~/ .local/bin/hermes gateway status)",
+      "Bash(git --version)"
     ]
   }
 }
