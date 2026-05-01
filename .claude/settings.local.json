@@ -12,7 +12,9 @@
       "Bash(~/ .local/bin/hermes gateway --help)",
       "Bash(~/.local/bin/hermes gateway *)",
       "Bash(~/ .local/bin/hermes gateway status)",
-      "Bash(git --version)"
+      "Bash(git --version)",
+      "Read(//Users/unequalone/.ssh/**)",
+      "Bash(ssh-keygen -t ed25519 -C \"boulaisdesign\" -f ~/.ssh/id_ed25519 -N \"\")"
     ]
   }
 }
