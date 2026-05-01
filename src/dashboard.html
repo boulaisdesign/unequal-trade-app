@@ -141,6 +141,45 @@ html, body { height:100%; background:var(--smoke); color:var(--black); font-fami
 .check-item { display:flex; align-items:center; gap:12px; padding:12px 0; border-bottom:1px solid var(--gray3); font-size:12px; }
 .check-icon { font-size:11px; width:14px; color:var(--terra); }
 .check-icon.todo { color:var(--gray2); }
+
+@media (max-width: 768px) {
+  /* Titlebar */
+  .titlebar { padding: 0 16px; gap: 8px; }
+  .titlebar-sep, .titlebar-sub, .countdown, .live-label { display: none; }
+
+  /* Bottom tab nav */
+  .layout { flex-direction: column; height: auto; min-height: calc(100vh - 44px); }
+  .sidebar {
+    position: fixed; bottom: 0; left: 0; right: 0;
+    width: 100%; height: 52px;
+    border-right: none; border-top: 1px solid var(--gray3);
+    padding: 0; display: flex; overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    z-index: 100; background: var(--white);
+  }
+  .sidebar::-webkit-scrollbar { display: none; }
+  .nav-group { display: flex; flex-direction: row; margin-bottom: 0; padding: 0; flex-shrink: 0; }
+  .nav-group-label { display: none; }
+  .nav-item { padding: 0 16px; height: 52px; white-space: nowrap; display: flex; align-items: center; width: auto; font-size: 13px; }
+  .main { overflow-y: auto; }
+
+  /* Pages */
+  .page { padding: 24px 16px 72px; }
+  .page-heading { font-size: 28px; margin-bottom: 20px; }
+  .refresh-row { margin-bottom: 20px; }
+
+  /* Grids */
+  .metrics { grid-template-columns: repeat(2, 1fr); }
+  .two-col { grid-template-columns: 1fr; gap: 20px; }
+  .hyp-stats { grid-template-columns: 1fr 1fr; }
+  .price-grid { grid-template-columns: repeat(2, 1fr); }
+
+  /* Tables */
+  .data-table { display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+
+  /* Run button */
+  .btn-primary { font-size: 11px; padding: 4px 10px; }
+}
 </style>
 </head>
 <body>

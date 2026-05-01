@@ -76,6 +76,10 @@ app.post('/api/run-cycle', (req, res) => {
   res.json({ success: false, error: 'Run cycle is only available in the desktop app.' })
 })
 
+app.get('/icon.png', (req, res) => {
+  res.sendFile(path.join(__dirname, '..', 'src', 'icon.png'))
+})
+
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, '..', 'src', 'dashboard.html'))
 })
